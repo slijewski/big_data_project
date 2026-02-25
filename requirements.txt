@@ -1,0 +1,8 @@
+dask[dataframe]
+pandas
+numpy
+scikit-learn
+psutil
+joblib
+pyarrow
+streamlit
