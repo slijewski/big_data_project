@@ -58,21 +58,37 @@ The Streamlit application (`app.py`) provides an interface for:
 
 2. Generate the synthetic Big Data (approx. 5 million rows):
    ```bash
+   # Using uv (recommended)
+   uv run 01_generate_big_data.py
+
+   # Or using python
    python 01_generate_big_data.py
    ```
 
 3. Run benchmarks to compare performance:
    ```bash
+   # Using uv (recommended)
+   uv run 02_benchmark.py
+
+   # Or using python
    python 02_benchmark.py
    ```
 
 4. Train the incremental model:
    ```bash
+   # Using uv (recommended)
+   uv run 03_analysis.py
+
+   # Or using python
    python 03_analysis.py
    ```
 
 5. Launch the dashboard:
    ```bash
+   # Using uv (recommended)
+   uv run streamlit run app.py
+
+   # Or using streamlit directly
    streamlit run app.py
    ```
 
